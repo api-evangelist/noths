@@ -1,8 +1,14 @@
 aid: noths
 name: NOTHS
-description: 'NOTHS is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: retail. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'NOTHS (Not On The High Street, notonthehighstreet.com) is a UK online
+  marketplace that curates and sells unique gifts, jewellery, homeware and personalised
+  products made or sourced by thousands of small UK creative businesses. Founded in
+  2006 and backed by Index Ventures, the platform connects independent sellers ("partners")
+  with consumers through a curated storefront, seller onboarding, and an affiliate
+  programme. It exposes no public developer API, OpenAPI, SDK, or documentation surface;
+  its api.notonthehighstreet.com host is a private backend serving the company''s own
+  web and mobile storefront. This profile is a VC-portfolio lead enriched by the API
+  Evangelist pipeline via live domain/security probing.'
 url: https://raw.githubusercontent.com/api-evangelist/noths/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,30 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://static-files.notonthehighstreet.com/webapps/shared/img/logo/NOTHS_logo_2026-heart.svg
 tags:
 - Company
 - Retail
+- Ecommerce
+- Marketplace
+- Gifts
+- Homeware
+- Small Business
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +48,13 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://notonthehighstreet.com
+  url: https://www.notonthehighstreet.com
+- type: SignUp
+  url: https://www.notonthehighstreet.com/join/signup
+- type: DomainSecurity
+  url: security/noths-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
